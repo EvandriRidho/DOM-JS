@@ -21,3 +21,5 @@ var paragraph = document.getElementById("container").getElementsByTagName("p")[0
 
 // Mengubah teks dalam elemen <p>
 paragraph.innerHTML = "Ini adalah teks yang diubah melalui JavaScript.";
+
+// DOM TREE BERFUNGSI UNTUK MEMBUAT DOCUMENT HTML MENJADI SEBUAH TREE
