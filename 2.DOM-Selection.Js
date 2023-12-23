@@ -30,3 +30,4 @@ for( let i = 0; i < li.length; i++) {
     li[i].style.color = "red";
 }
 
+// DOM SELECTION BERFUNGSI UNTUK MENYELEKSI SEBUAH DOM DENGAN YANG KITA PILIH SEPERTI ID, TAG DLL
