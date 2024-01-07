@@ -1,0 +1,10 @@
+// DOM Tranversal
+const silang = document.querySelectorAll(".close");
+
+for ( let i = 0; i < silang.length; i++) {
+    silang[i].addEventListener("click", function(e){
+        e.target.parentElement.style.display = "none"; //parentElement adalah salah satu contoh DOM Tranversal
+    });
+}
+
+
