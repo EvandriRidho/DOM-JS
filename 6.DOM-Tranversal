@@ -4,7 +4,25 @@ const silang = document.querySelectorAll(".close");
 for ( let i = 0; i < silang.length; i++) {
     silang[i].addEventListener("click", function(e){
         e.target.parentElement.style.display = "none"; //parentElement adalah salah satu contoh DOM Tranversal
+        e.preventDefault(); //preventDefault untuk mencegah browser ke default
+        e.stopPropagation(); //untuk menghentikan Bubble Event
     });
 }
 
+
+const cards = document.querySelectorAll(".card");
+cards.forEach(function(card){
+    card.addEventListener("click",function(e){
+        alert("Oke");
+    });
+});
+
+const container = document.querySelector(".container");
+
+container.addEventListener("click", function(e){
+    if(e.target.className == "close") {
+        e.target.parentElement.style.display = "none";
+        e.preventDefault();
+    }
+});
 
